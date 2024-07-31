@@ -1,0 +1,15 @@
+{
+    "extends": [
+        "stylelint-config-standard",
+        "stylelint-prettier/recommended",
+        "stylelint-config-rational-order",
+        "stylelint-config-prettier"
+    ],
+    "ignoreFiles": ["build/**/*.css"],
+    "plugins": ["stylelint-order"],
+    "rules": {
+        "selector-class-pattern": "^[a-z][a-zA-Z0-9]+$",
+        "color-named": "never",
+        "color-hex-length": "long"
+    }
+}

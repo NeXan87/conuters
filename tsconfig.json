@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "outDir": "./build/",
+        "noImplicitAny": true,
+        "module": "ESNext",
+        "target": "es5",
+        "jsx": "react-jsx",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        "baseUrl": "./src",
+        "paths": {
+            "@src/*": ["*"],
+            "@assets/*": ["assets/*"],
+            "@hooks/*": ["hooks/*"],
+            "@services/*": ["services/*"],
+            "@components/*": ["components/*"],
+            "@helpers/*": ["helpers/*"],
+            "@store/*": ["store/*"],
+            "@interfaces/*": ["interfaces/*"],
+            "@adapters/*": ["adapters/*"]
+        }
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
+    }
+}
